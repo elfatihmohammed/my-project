@@ -11,11 +11,11 @@
     <header>
         <nav>
             <a href="index.html">Home</a> |
-            <a href="#">About</a> |
-            <a href="#">Contact</a>
+            <a href="#table-section">comparison</a> |
+            <a href="#media-section">media</a>
         </nav>
     </header>
-
+<section>
     <h2>HTML Versions</h2>
     <ul>
         <li>HTML 1.0</li>
@@ -25,39 +25,48 @@
         <li>XHTML</li>
         <li>HTML5</li>
     </ul>
+    </section>
 
+    <section id="table-section">
     <h2>Semantic vs Non-semantic Elements</h2>
     <table border="1">
-        <tr>
-            <th>Semantic Elements</th>
-            <th>Non-semantic Elements</th>
-        </tr>
-        <tr>
-            <td>&lt;header&gt;</td>
-            <td>&lt;div&gt;</td>
-        </tr>
-        <tr>
-            <td>&lt;footer&gt;</td>
-            <td>&lt;span&gt;</td>
-        </tr>
-        <tr>
-            <td>&lt;section&gt;</td>
-            <td>&lt;div&gt;</td>
-        </tr>
-    </table>
+       
+                <thead>
+                    <tr>
+                        <th>(Semantic)</th>
+                        <th>(Non-semantic)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>تعرف المتصفح والمطور على محتواها (مثل &lt;article&gt;)</td>
+                        <td>لا تقدم أي معنى عن محتواها (مثل &lt;div&gt;)</td>
+                    </tr>
+                    <tr>
+                        <td>تساعد في تحسين محركات البحث (SEO)</td>
+                        <td>تستخدم فقط للتنسيق وتجميع العناصر</td>
+                    </tr>
+                    <tr>
+                        <td>أمثلة: &lt;header&gt;, &lt;footer&gt;, &lt;main&gt;</td>
+                        <td>أمثلة: &lt;div&gt;, &lt;span&gt;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
+<section id="media-section">
     <h2>Image</h2>
     <img src="e.jpg" alt="HTML Image" width="300">
 
     <h2>Video</h2>
     <video width="320" controls>
-        <source src="video.mp4" type="video/mp4">
+        <source src="a.mp4" type="video/mp4">
         Your browser does not support video.
     </video>
+    </section>
     <br>
     <a href="index.html"> back page 1</a>
 
 </body>
-
 
 </html>
